@@ -279,7 +279,7 @@ export default function ScratchCardSection({
                     </div>
 
                     <a
-                        href={`https://wa.me/917415442359?text=${encodeURIComponent(
+                        href={`https://wa.me/919009208389?text=${encodeURIComponent(
                             `Hi Dabbawala India,
 
 I won a scratch card reward.

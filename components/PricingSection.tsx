@@ -171,7 +171,7 @@ export default function PricingSection() {
                 </div>
 
                 <a
-                  href="https://wa.me/917415442359"
+                  href="https://wa.me/919009208389"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block text-center py-4 rounded-xl font-bold transition ${
@@ -271,7 +271,7 @@ export default function PricingSection() {
 </p>
 
 <a
-  href="https://wa.me/917415442359"
+  href="https://wa.me/919009208389"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-10 py-5 rounded-2xl font-bold shadow-xl"

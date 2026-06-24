@@ -11,7 +11,7 @@ export default function WhatsAppClaimButton({ couponCode, reward }: WhatsAppClai
   const handleClick = () => {
     const message = `Hi Dabbawala India,\n\nI won a scratch card reward.\n\nCoupon Code: ${couponCode}\n\nI would like to place an order.`
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://wa.me/917415442359?text=${encodedMessage}`, '_blank', 'noopener,noreferrer')
+    window.open(`https://wa.me/919009208389?text=${encodedMessage}`, '_blank', 'noopener,noreferrer')
   }
 
   return (

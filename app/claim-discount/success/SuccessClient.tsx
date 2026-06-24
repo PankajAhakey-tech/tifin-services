@@ -13,7 +13,7 @@ export default function SuccessClient({ couponCode }: SuccessClientProps) {
   const handleWhatsApp = () => {
     const message = `Hi! I just claimed my Dabbawala India discount coupon: ${couponCode}. I'd like to know more about the meal plans available in my area.`
     const encoded = encodeURIComponent(message)
-    window.open(`https://wa.me/917415442359?text=${encoded}`, '_blank')
+    window.open(`https://wa.me/919009208389?text=${encoded}`, '_blank')
   }
 
   return (

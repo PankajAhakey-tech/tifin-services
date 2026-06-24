@@ -129,7 +129,7 @@ export default function ScratchPage() {
                         </div>
 
                         <a
-                            href={`https://wa.me/917415442359?text=Hi%20Dabbawala,%20I%20want%20to%20claim%20my%20coupon%20${couponData.couponCode}`}
+                            href={`https://wa.me/919009208389?text=Hi%20Dabbawala,%20I%20want%20to%20claim%20my%20coupon%20${couponData.couponCode}`}
                             className="mt-6 inline-block rounded-xl bg-green-600 px-6 py-3 font-bold text-white"
                         >
                             Claim on WhatsApp
