@@ -12,7 +12,6 @@ export default function DiscountForm() {
     name: '',
     mobile: '',
     area: '',
-    address: '',
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -25,7 +24,7 @@ export default function DiscountForm() {
     e.preventDefault()
     setLoading(true)
     setError('')
-
+    console.log('Submitting to:', '/api/leads')
     try {
       const response = await fetch('/api/leads', {
         method: 'POST',
@@ -41,7 +40,15 @@ export default function DiscountForm() {
       }
 
       // Redirect to success page with coupon code
-      router.push(`/claim-discount/success?coupon=${data.couponCode}`)
+      // router.push(`/claim-discount/success?coupon=${data.couponCode}`)
+      localStorage.setItem(
+        'leadId',
+        data.leadId
+      )
+
+      router.push(
+        `/scratch?leadId=${data.leadId}`
+      )
     } catch (err) {
       setError('An error occurred. Please try again.')
       console.error('[v0] Form submission error:', err)
@@ -104,19 +111,6 @@ export default function DiscountForm() {
             required
             className="w-full px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent outline-none"
             placeholder="Your area or colony name"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-foreground mb-1">Full Address</label>
-          <textarea
-            name="address"
-            value={formData.address}
-            onChange={handleChange}
-            required
-            rows={3}
-            className="w-full px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent outline-none resize-none"
-            placeholder="Your complete address for delivery"
           />
         </div>
       </div>

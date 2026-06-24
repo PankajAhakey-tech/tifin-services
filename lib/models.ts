@@ -6,7 +6,6 @@ const leadSchema = new mongoose.Schema(
     name: { type: String, required: true },
     mobile: { type: String, required: true },
     area: { type: String, required: true },
-    address: { type: String, required: true },
     couponCode: { type: String, unique: true, sparse: true },
     status: { type: String, enum: ['new', 'redeemed', 'converted'], default: 'new' },
   },

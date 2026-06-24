@@ -38,37 +38,38 @@ return ( <section className="relative min-h-[90vh] flex items-center overflow-hi
 
         {/* Offer Badge */}
         <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-5 py-2 rounded-full font-semibold shadow-md">
-          🎁 Get ₹150 OFF On Your First Tiffin Order
+          🎁 Get ₹100 OFF On Your First Tiffin Order
         </div>
 
         {/* Heading */}
-        <div className="space-y-4">
+      {/* Heading */}
+<div className="space-y-4">
 
-          <h1 className="text-5xl md:text-7xl font-black leading-tight">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
 
-            <span className="block text-slate-900">
-              माँ के हाथ का खाना
-            </span>
+    <span className="block text-slate-900">
+      माँ के हाथ का खाना
+    </span>
 
-            <span className="block text-orange-500">
-              मिस कर रहे हो?
-            </span>
+    <span className="block text-orange-500">
+      मिस कर rahe ho?
+    </span>
 
-            <span className="block text-green-600 mt-2">
-              Ghar Jaisa Khana,
-            </span>
+    <span className="block text-green-600 mt-2">
+      Ghar Jaisa Khana,
+    </span>
 
-            <span className="block text-slate-900">
-              Har Din, Time Par.
-            </span>
+    <span className="block text-slate-900">
+      Har Din, Time Par.
+    </span>
 
-          </h1>
+  </h1>
 
-          <p className="text-xl md:text-2xl font-medium text-slate-700">
-            Taste of Home, Delivered to You
-          </p>
+  <p className="text-base md:text-xl font-medium text-slate-700">
+    Taste of Home, Delivered to You
+  </p>
 
-        </div>
+</div>
 
         {/* Description */}
         <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
@@ -113,7 +114,7 @@ return ( <section className="relative min-h-[90vh] flex items-center overflow-hi
             href="/claim-discount"
             className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-bold shadow-xl transition-all duration-300 hover:scale-105"
           >
-            🎁 Claim ₹150 Discount
+            🎁 Claim ₹100 Discount
           </Link>
 
           <a
