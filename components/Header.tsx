@@ -35,15 +35,12 @@ export default function Header() {
 
   return (
     <motion.header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-background/95 backdrop-blur shadow-lg'
-          : 'bg-background/80 backdrop-blur'
-      }`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+  className={`sticky top-0 z-50 transition-all duration-300 ${
+    isScrolled
+      ? 'bg-white shadow-lg'
+      : 'bg-white/95 backdrop-blur'
+  }`}
+>
 <div className="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
 
   {/* Logo */}
