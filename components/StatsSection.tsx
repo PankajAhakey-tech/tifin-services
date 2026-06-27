@@ -31,8 +31,8 @@ const StatCounter = ({ end, label }: { end: number; label: string }) => {
 
 export default function StatsSection() {
   const stats = [
-    { end: 5000, label: 'Happy Customers' },
-    { end: 50000, label: 'Meals Delivered' },
+    { end: 1000, label: 'Happy Customers' },
+    { end: 10000, label: 'Meals Delivered' },
     { end: 15, label: 'City Coverage' },
     { end: 98, label: 'Satisfaction Rate' },
   ]

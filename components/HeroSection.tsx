@@ -194,7 +194,7 @@ export default function HeroSection() {
             className="absolute top-10 right-0 bg-white px-5 py-4 rounded-2xl shadow-xl"
           >
             <div className="text-2xl font-bold text-orange-500">
-              5000+
+              1000+
             </div>
             <div className="text-sm text-slate-500">
               Customers Served
