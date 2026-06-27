@@ -76,7 +76,7 @@ export default function TrustSection() {
 
   <div className="bg-white rounded-3xl shadow-lg p-8 text-center">
     <h3 className="text-4xl font-bold text-orange-500">
-      <Counter end={500} suffix="+" />
+      <Counter end={1000} suffix="+" />
     </h3>
     <p className="mt-2 text-slate-600">
       Happy Customers
