@@ -11,6 +11,7 @@ export default function Home() {
     <main>
       <Header />
       <HeroSection />
+      
       <TrustSection />
       <PricingSection />
       {/* <StatsSection /> */}

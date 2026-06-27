@@ -43,43 +43,70 @@ export default function HeroSection() {
 
           {/* Heading */}
           {/* Heading */}
-          <div className="space-y-5">
-  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
-    <span className="block text-slate-900">
-      माँ के हाथ का खाना
-    </span>
+          <div className="space-y-3">
 
-    <span className="block text-orange-500">
-      Miss Kar Rahe Ho?
-    </span>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-slate-900">
+              <span className="block">
+                माँ के हाथ का स्वाद,
+              </span>
 
-    <span className="block text-green-600 mt-1">
-      Ghar Jaisa Khana,
-    </span>
+              <span className="block text-orange-500">
+                अब हर दिन आपके साथ।
+              </span>
+            </h1>
 
-    <span className="block text-slate-900">
-      Har Din, Time Par.
-    </span>
-  </h1>
+            <p className="text-base md:text-lg text-slate-600 max-w-2xl leading-relaxed">
+              Fresh, hygienic and homemade meals delivered daily across Indore
+              for students, working professionals and families.
+            </p>
 
-  <p className="text-base md:text-lg font-medium text-slate-600">
-    Fresh • Hygienic • Homemade Meals Delivered Daily
-  </p>
-</div>
+          </div>
 
-{/* Description */}
-<p className="text-base md:text-lg text-slate-600 leading-8 max-w-2xl">
-  Hostel mein ho ya office ki busy life mein ghar ka khana miss kar rahe ho?
-  Dabbawala India fresh, hygienic aur homemade meals aapke doorstep tak
-  time par pahunchata hai, bilkul ghar ke swaad ke saath.
-</p>
+          {/* Description */}
+          <p className="text-sm md:text-base text-slate-600 leading-7 max-w-2xl">
+            Hostel mein ho ya office ki busy life mein ghar ka khana miss kar rahe ho?
+            Dabbawala India fresh, hygienic aur homemade meals aapke doorstep tak
+            time par pahunchata hai, bilkul ghar ke swaad ke saath.
+          </p>
+
+          {/* stats card */}
+          <div className="flex flex-wrap gap-10 py-2">
+
+            <div>
+              <div className="text-4xl font-bold text-orange-500">
+                5000+
+              </div>
+              <div className="text-slate-600 text-sm">
+                Happy Customers
+              </div>
+            </div>
+
+            <div>
+              <div className="text-4xl font-bold text-green-600">
+                4.9★
+              </div>
+              <div className="text-slate-600 text-sm">
+                Customer Rating
+              </div>
+            </div>
+
+            <div>
+              <div className="text-4xl font-bold text-slate-900">
+                100%
+              </div>
+              <div className="text-slate-600 text-sm">
+                Freshly Cooked
+              </div>
+            </div>
+
+          </div>
 
           {/* Plan Card */}
-          <div className="inline-flex items-center gap-5 bg-white/90 backdrop-blur-sm px-6 py-4 rounded-2xl shadow-xl border border-orange-100">
+          <div className="inline-flex items-center gap-5 bg-white px-6 py-4 rounded-2xl shadow-lg border border-slate-100">
 
             <div>
               <p className="text-sm text-slate-500">
-                Starting Plan
+                Starting From
               </p>
 
               <h3 className="text-3xl font-bold text-orange-500">
@@ -91,33 +118,34 @@ export default function HeroSection() {
 
             <div>
               <p className="text-sm text-slate-500">
-                Includes
+                Monthly Plan
               </p>
 
-              <h3 className="font-bold text-green-600">
-                28 Tiffins 🍱
+              <h3 className="font-semibold text-slate-900">
+                28 Meals Included
               </h3>
             </div>
 
           </div>
+
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
 
             <Link
               href="/claim-discount"
-              className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-bold shadow-xl transition-all duration-300 hover:scale-105"
+              className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-semibold shadow-lg transition"
             >
-              🎁 Claim ₹100 Discount
+              Get ₹100 OFF
             </Link>
 
             <a
               href="https://wa.me/919009208389"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white rounded-xl font-bold shadow-xl transition-all duration-300 hover:scale-105"
+              className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white rounded-xl font-semibold shadow-lg transition"
             >
-              💬 WhatsApp Us
+              Order On WhatsApp
             </a>
 
           </div>
@@ -125,53 +153,19 @@ export default function HeroSection() {
           {/* Trust Features */}
           <div className="flex flex-wrap gap-3">
 
-            <div className="bg-white/90 backdrop-blur-sm px-5 py-3 rounded-xl shadow-md">
-              🌱 Pure & Nutritious
-            </div>
-
-            <div className="bg-white/90 backdrop-blur-sm px-5 py-3 rounded-xl shadow-md">
-              🛡 Hygienic & Safe
-            </div>
-
-            <div className="bg-white/90 backdrop-blur-sm px-5 py-3 rounded-xl shadow-md">
-              🚚 On Time Delivery
-            </div>
-
-            <div className="bg-white/90 backdrop-blur-sm px-5 py-3 rounded-xl shadow-md">
-              ❤️ Made With Care
-            </div>
-
-          </div>
-
-          {/* Stats */}
-          <div className="flex flex-wrap gap-10 pt-4">
-
-            <div>
-              <div className="text-4xl font-bold text-orange-500">
-                5000+
+            {[
+              'Freshly Cooked Daily',
+              '100% Hygienic Kitchen',
+              'On-Time Delivery',
+              'Homemade Taste'
+            ].map((item) => (
+              <div
+                key={item}
+                className="bg-white px-4 py-2 rounded-full border border-slate-200 text-sm font-medium text-slate-700 shadow-sm"
+              >
+                {item}
               </div>
-              <div className="text-slate-600">
-                Happy Customers
-              </div>
-            </div>
-
-            <div>
-              <div className="text-4xl font-bold text-green-600">
-                ⭐ 4.9
-              </div>
-              <div className="text-slate-600">
-                Customer Rating
-              </div>
-            </div>
-
-            <div>
-              <div className="text-4xl font-bold text-slate-900">
-                100%
-              </div>
-              <div className="text-slate-600">
-                Fresh & Hygienic
-              </div>
-            </div>
+            ))}
 
           </div>
 
@@ -182,34 +176,43 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative flex justify-center items-center"
+          className="relative hidden lg:flex justify-center items-center"
         >
 
           <Image
             src="/images/bg_logo.png"
-            alt="Dabbawala India"
+            alt="Homemade Tiffin"
             width={550}
             height={550}
             priority
             className="drop-shadow-2xl"
           />
 
+          {/* Floating Stats */}
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity }}
-            className="absolute top-10 right-0 bg-white/90 backdrop-blur-md px-5 py-4 rounded-2xl shadow-xl"
+            className="absolute top-10 right-0 bg-white px-5 py-4 rounded-2xl shadow-xl"
           >
-            <div className="font-bold">🍱 Fresh Meals</div>
-            <div className="text-sm text-slate-500">Cooked Daily</div>
+            <div className="text-2xl font-bold text-orange-500">
+              5000+
+            </div>
+            <div className="text-sm text-slate-500">
+              Customers Served
+            </div>
           </motion.div>
 
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
-            className="absolute bottom-10 left-0 bg-white/90 backdrop-blur-md px-5 py-4 rounded-2xl shadow-xl"
+            className="absolute bottom-10 left-0 bg-white px-5 py-4 rounded-2xl shadow-xl"
           >
-            <div className="font-bold">🚚 Free Delivery</div>
-            <div className="text-sm text-slate-500">On Time Everyday</div>
+            <div className="text-2xl font-bold text-green-600">
+              4.9★
+            </div>
+            <div className="text-sm text-slate-500">
+              Average Rating
+            </div>
           </motion.div>
 
         </motion.div>
