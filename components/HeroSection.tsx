@@ -70,12 +70,12 @@ export default function HeroSection() {
           </p>
 
           {/* stats card */}
-          <div className="flex flex-wrap gap-10 py-2">
+         <div className="grid grid-cols-3 gap-4 py-2">
 
             <div>
-              <div className="text-4xl font-bold text-orange-500">
-                5000+
-              </div>
+              <div className="text-2xl md:text-4xl font-bold text-orange-500">
+  1000+
+</div>
               <div className="text-slate-600 text-sm">
                 Happy Customers
               </div>
@@ -102,7 +102,7 @@ export default function HeroSection() {
           </div>
 
           {/* Plan Card */}
-          <div className="inline-flex items-center gap-5 bg-white px-6 py-4 rounded-2xl shadow-lg border border-slate-100">
+          <div className="flex flex-col sm:flex-row items-center gap-5 bg-white px-6 py-4 rounded-2xl shadow-lg border border-slate-100">
 
             <div>
               <p className="text-sm text-slate-500">
@@ -129,26 +129,26 @@ export default function HeroSection() {
           </div>
 
 
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4">
+        {/* CTA Buttons */}
+<div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
 
-            <Link
-              href="/claim-discount"
-              className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-semibold shadow-lg transition"
-            >
-              Get ₹100 OFF
-            </Link>
+  <Link
+    href="/claim-discount"
+    className="w-full sm:w-auto text-center px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-semibold shadow-lg transition-all duration-300 hover:scale-105"
+  >
+    Get ₹100 OFF
+  </Link>
 
-            <a
-              href="https://wa.me/919009208389"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-green-600 hover:bg-green-700 text-white rounded-xl font-semibold shadow-lg transition"
-            >
-              Order On WhatsApp
-            </a>
+  <a
+    href="https://wa.me/919009208389"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full sm:w-auto text-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white rounded-xl font-semibold shadow-lg transition-all duration-300 hover:scale-105"
+  >
+    Order On WhatsApp
+  </a>
 
-          </div>
+</div>
 
           {/* Trust Features */}
           <div className="flex flex-wrap gap-3">
@@ -173,20 +173,19 @@ export default function HeroSection() {
 
         {/* RIGHT SIDE */}
         <motion.div
-          initial={{ opacity: 0, x: 80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative hidden lg:flex justify-center items-center"
-        >
-
-          <Image
-            src="/images/bg_logo.png"
-            alt="Homemade Tiffin"
-            width={550}
-            height={550}
-            priority
-            className="drop-shadow-2xl"
-          />
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  className="relative flex lg:hidden justify-center mb-6"
+>
+  <Image
+    src="/images/bg_logo.png"
+    alt="Homemade Tiffin"
+    width={260}
+    height={260}
+    priority
+    className="drop-shadow-xl"
+  />
+</motion.div>
 
           {/* Floating Stats */}
           <motion.div
@@ -215,7 +214,6 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-        </motion.div>
 
       </div>
     </div>
