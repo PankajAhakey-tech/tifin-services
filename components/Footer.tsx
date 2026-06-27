@@ -173,18 +173,18 @@ export default function Footer() {
             <div className="space-y-4">
 
               <a
-                href="tel:+919999999999"
+                href="tel:+919009208389"
                 className="block text-slate-300 hover:text-white"
               >
-                📞 +91 99999 99999
+                📞 +91 90092 08389
               </a>
 
-              <a
+              {/* <a
                 href="mailto:info@dabbawalaindia.com"
                 className="block text-slate-300 hover:text-white"
               >
                 📧 info@dabbawalaindia.com
-              </a>
+              </a> */}
 
               <div className="text-slate-300">
                 🕒 10 AM - 9 PM

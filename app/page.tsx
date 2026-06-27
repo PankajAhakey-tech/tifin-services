@@ -14,7 +14,7 @@ export default function Home() {
       <TrustSection />
       <PricingSection />
       {/* <StatsSection /> */}
-      {/* <ReviewsSection /> */}
+      <ReviewsSection />
       <Footer />
     </main>
   )

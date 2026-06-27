@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-
+import Counter from './Counter'
 const trustItems = [
   {
     icon: '🥗',
@@ -59,12 +59,12 @@ export default function TrustSection() {
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl md:text-6xl font-black mb-6 text-slate-900">
-            Why Indore Chooses
-            <span className="block bg-gradient-to-r from-orange-500 to-green-600 bg-clip-text text-transparent">
-              Our Tiffin Service?
-            </span>
-          </h2>
+         <h2 className="text-4xl md:text-5xl font-bold text-slate-900">
+  Why Thousands of People
+  <span className="block text-orange-500">
+    Trust Dabbawala India
+  </span>
+</h2>
 
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
             Whether you're a student, working professional, living in a PG,
@@ -72,6 +72,45 @@ export default function TrustSection() {
             to your doorstep every day.
           </p>
         </motion.div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+
+  <div className="bg-white rounded-3xl shadow-lg p-8 text-center">
+    <h3 className="text-4xl font-bold text-orange-500">
+      <Counter end={500} suffix="+" />
+    </h3>
+    <p className="mt-2 text-slate-600">
+      Happy Customers
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl shadow-lg p-8 text-center">
+    <h3 className="text-4xl font-bold text-green-600">
+      <Counter end={10000} suffix="+" />
+    </h3>
+    <p className="mt-2 text-slate-600">
+      Meals Delivered
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl shadow-lg p-8 text-center">
+    <h3 className="text-4xl font-bold text-orange-500">
+      ⭐ 4.9
+    </h3>
+    <p className="mt-2 text-slate-600">
+      Customer Rating
+    </p>
+  </div>
+
+  <div className="bg-white rounded-3xl shadow-lg p-8 text-center">
+    <h3 className="text-4xl font-bold text-green-600">
+      100%
+    </h3>
+    <p className="mt-2 text-slate-600">
+      Freshly Cooked
+    </p>
+  </div>
+
+</div>
 
         {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
@@ -134,49 +173,6 @@ export default function TrustSection() {
           }}
           className="mt-20"
         >
-          <div className="bg-white rounded-3xl shadow-2xl border border-orange-100 p-10">
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-
-              <div>
-                <h3 className="text-4xl font-black text-orange-500">
-                  500+
-                </h3>
-                <p className="text-slate-600 mt-2">
-                  Happy Customers
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-black text-green-600">
-                  10K+
-                </h3>
-                <p className="text-slate-600 mt-2">
-                  Meals Delivered
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-black text-orange-500">
-                  ⭐ 4.9
-                </h3>
-                <p className="text-slate-600 mt-2">
-                  Customer Rating
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-4xl font-black text-green-600">
-                  100%
-                </h3>
-                <p className="text-slate-600 mt-2">
-                  Freshly Cooked
-                </p>
-              </div>
-
-            </div>
-
-          </div>
         </motion.div>
 
         {/* Bottom Highlight */}
