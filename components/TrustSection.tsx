@@ -72,7 +72,7 @@ export default function TrustSection() {
             to your doorstep every day.
           </p>
         </motion.div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
 
   <div className="bg-white rounded-3xl shadow-lg p-8 text-center">
     <h3 className="text-4xl font-bold text-orange-500">
@@ -109,7 +109,7 @@ export default function TrustSection() {
     </p>
   </div>
 
-</div>
+</div> */}
 
         {/* Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
